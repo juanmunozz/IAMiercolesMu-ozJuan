@@ -3,14 +3,13 @@
 import streamlit as st
 from groq import Groq
 
-st.set_page_config(page_title="", page_icon="👍")
-st.title("Mi primera aplicacion con Streamlit")
+st.set_page_config(page_title="IA", page_icon="🧠")
+st.title("IA - Talento Tech")
 
 
 MODELOS = ['llama-3.1-8b-instant', 'llama-3.3-70b-versatile', 'deepseek-r1-distill-llama-70b']
 
 def configurar_pagina():
-    st.title("IA - Talento Tech")
     st.sidebar.title("Configuracion de la IA")
 
     elegirModelo = st.sidebar.selectbox(
@@ -82,3 +81,4 @@ def main ():
         
 if __name__ == "__main__":
     main()
+
