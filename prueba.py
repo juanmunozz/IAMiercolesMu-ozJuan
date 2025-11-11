@@ -12,8 +12,7 @@ MODELOS = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile","deepseek-r1-distil
 
 # Crear cliente Groq
 def crear_cliente():
-    clave_secreta = st.secrets["CLAVE_API"]
-    return Groq(api_key= clave_secreta)
+    return Groq(api_key=st.secrets["CLAVE_API"])
 
 
 # Inicializar historial
@@ -50,5 +49,6 @@ if mensaje:
 # Mostrar historial
 for remitente, texto in st.session_state.mensajes:
     st.markdown(f"**{remitente}:** {texto}")
+
 
 
