@@ -7,7 +7,7 @@ st.set_page_config(page_title="IA", page_icon="🧠")
 st.title("IA - Talento Tech")
 
 
-MODELOS = ['llama-3.1-8b-instant', 'llama-3.3-70b-versatile', 'deepseek-r1-distill-llama-70b']
+MODELOS = ['llama-3.1-8b-instant', 'llama-3.3-70b-versatile']
 
 def configurar_pagina():
     st.sidebar.title("Configuracion de la IA")
@@ -81,4 +81,5 @@ def main ():
         
 if __name__ == "__main__":
     main()
+
 
